@@ -106,3 +106,25 @@ arrow.textContent = '→';
 https://academy.hackthebox.com/app/module/34
 
 
+### Networking Overview
+
+Network allows two computers to talk to each other . There are many things in networking like
+
+Topologies(mesh,tree,star)
+Mediums(ethernet,fiber,coax,wireless)
+Protocols(TCP,UDP,IPX)
+
+These Things are used into the Networking or Internet
+
+
+### Basic Information
+![[Pasted image 20260609125545.png]]
+
+THE Internet is distributed into diff Subnetworks like (Home,Collage,Office,etc)
+
+Eg> When we want to access any site of anything we exchange the data of that company's site (address) or 
+URL (Uniform Resoruce Locator) which also known as 
+FDQN (Fully Qualified Domain Name)
+
+The Difference Btw these two are the FDQN only gives the base address (address of the building ).But the URL gives the exact location (which floor which side which office,etc)
+
