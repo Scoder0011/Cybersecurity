@@ -1,9 +1,10 @@
 ---
-banner: "Assets/Banners/Shy.png"
-banner_y: 0.6125
+banner: "Assets/Banners/black.jpg"
+banner_y: 0.4585
 banner_x: 0.45397
-banner_icon: 🧧
+banner_icon: 🏴
 ---
+
 ```dataviewjs
 const container = dv.container;
 container.style.cssText = `margin: 0 0 24px 0;`;

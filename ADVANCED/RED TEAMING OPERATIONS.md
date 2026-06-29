@@ -1,8 +1,8 @@
 ---
-banner: "Assets/Banners/Paradise.jpg"
-banner_y: 0
+banner: "Assets/Banners/skull.png"
+banner_y: 0.4725
 banner_x: 0.45397
-banner_icon: ⚓
+banner_icon: ☠️
 ---
 
 ```dataviewjs
@@ -102,7 +102,3 @@ const arrow = btnInner.createEl('span');
 arrow.className = 'home-btn-arrow';
 arrow.textContent = '→';
 ```
-
-
-## **Websecurity-Server-side topics**
-https://portswigger.net/web-security/all-topics

@@ -1,9 +1,10 @@
 ---
-banner: "Assets/Banners/Snake.jpeg"
-banner_y: 0.0905
+banner: "Assets/Banners/astro.png"
+banner_y: 0.2565
 banner_x: 0.45397
-banner_icon: ❄️
+banner_icon: 👾
 ---
+
 ```dataviewjs
 const container = dv.container;
 container.style.cssText = `margin: 0 0 24px 0;`;
@@ -101,56 +102,3 @@ const arrow = btnInner.createEl('span');
 arrow.className = 'home-btn-arrow';
 arrow.textContent = '→';
 ```
-
-# Basic Things in python 
-print("Hello World") 
-print("Hello World\nHello World")
-print("Hello World" + "Hello World")
- 
-x = "hello"
-
-y = "World"
-
-print(x+y)
-
-x = "hello"
-
-y = "World"
-
-print(f"{x}")
-
-print("YOUR IP IS " + input("ENter your Ip"))
-
-a = "1"
-b = 1
-print(int(a)+b)
-
-fname = input("Enter Your First Name")
-
-lname = input("Enter Your Last Name")
-
-  
-
-print(f"YOur Name is{fname}{lname}")
-
-print("HEllo"[0])
-
-print(type("HELLO"))
-int , float , bool , str
-a = int(input("Enter a number"))
-
-b = int(input("Enter b number"))
-
-  
-
-if a > b:
-
-print("A is greater")
-
-elif b > a :
-
-print("B is Greater")
-
-else:
-
-print("BOth are equal")
