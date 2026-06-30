@@ -139,3 +139,35 @@ to find the file we will use the same method as earlier and use find command tha
 (find . -type f -size 1033c ! -executable) so this command cheaks everyfile and see if its type is -f (file) and its size is 1033c(bytes) and its ! -executable (its executed as a programme) it skips all the files and give us the file that matches all these character and then using cat command as cat ./.file2 we get the password >> pXa26xhMWaC2SvDotA4r9EgZkulOeSBW
 
 ##### Bandit Level 6 → Level 7
+To Solve this challange we need to find the password which is owned by the user bandit7 and owned by the group bandit6 and it have 33 bytes in size so we use the command find / -user bandit7 -group bandit6 -size 33c 2>/dev/null in this command the find command cheaks the whole folder starting from the root as its assigned / and -user bandit7 search for a specific user and group bandit6 and 33c searching for 33 bytes in size and used 2>/dev/null for keeping the terminal clean from the permission denied error after running we get the file path and using cat /var/lib/dpkg/info/bandit7.password we get the password as >>
+Bmnnvf82KzQlfxgAI2d1zYbr1u9pr3E3
+
+##### Bandit Level 7 → Level 8
+To Solve this level we need to find the password in a data.txt file which is beside the word millionth so we use the ls and the grep command as grep "millionth" data.txt and we get the password >>
+VR1ljMayciFxbnUokuQmJFw6QC9VKtub
+
+##### Bandit Level 8 → Level 9
+To Solve this level we need to find a file which is not repeated and its unique so we used ls to display all the lines in the file and then we used the uniq command to indentify which one is repeted so we used 
+sort data.txt | uniq -c  the sort command arranges the files and the -c command shows the column they are in after doing that we found a unique column with 1 and everyother was in column 10 so 1 is the password >> 
+EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl
+
+##### Bandit Level 9 → Level 10
+To Solve this challange we need to find a redable strings in a garbage data.txt file to solve this we need to find text which is human redable and starts with ==== so we used ls and then (strings data.txt | grep ==== command which finds out the strings in the whole garbage and which starts with ==== so we get the password >> B0s2khmbT9u0geKuOoVGW3JZKhndE3BG
+
+##### Bandit Level 10 → Level 11
+To Solve this level you have to decrypt base64 in the data.txt we can just use the direct command base64 -d data.txt and the we get the password >> pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro
+
+##### Bandit Level 11 → Level 12
+To solve this level we need to use rot13 decoder as the question says the numbers have been rotated by 13 characters which indicates towards encryption ROT13 and we can use any online decoder which gives us the password >> GROozWPO8QyN0mGrjUkID0WCYkZiQxrN
+
+##### Bandit Level 12 → Level 13
+I really dont know how i sovled this challange but we have to get the password from a hex dump inside data.txt inside it there was a Gzip (zip box ) and inside that box there was a tar file and after that file it have a Bzip2 (zip box ) and after going through all of that we found the file called data8 and using cat data8 we got the password>> qQYQiHOBPR8zR61qxYqX45quvihF2uzk
+
+
+##### Bandit Level 13 → Level 14
+To Solve this level we need to save sshprivate key and use it directly to login into next level using the key we will save the key in a file and then use it to log we will use navigate to the same directory as the key and use the ssh command as ssh -i key bandit14@bandit.labs.overthewire.org -p 2220 
+
+##### Bandit Level 14 → Level 15
+To Solve this challange we need to find the password for this level and then connect to local host on 30000 and then give the passsword of this level to localhost it will give us the password but to neviage to password of this level we need to go to /etc/bandit14 and use cat bandit14 and then use on local host so this level password is >> aaWecNkG4FhxJQxz07uiwzVP6bJiYS65
+and the next level password >> pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
+
