@@ -171,3 +171,24 @@ To Solve this level we need to save sshprivate key and use it directly to login 
 To Solve this challange we need to find the password for this level and then connect to local host on 30000 and then give the passsword of this level to localhost it will give us the password but to neviage to password of this level we need to go to /etc/bandit14 and use cat bandit14 and then use on local host so this level password is >> aaWecNkG4FhxJQxz07uiwzVP6bJiYS65
 and the next level password >> pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
 
+##### Bandit Level 15 → Level 16
+To Solve This level we need to find the current level password using the cat /etc/bandit_pass/bandit15 and we get the current level password pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7 and using this password we connect to the server as it is ssl server the nc wont work so we use ncat --ssl localhost 30001 and then submit the password to get the next password >> kS0Hf0u5HiXFwKMKFqXvPdOTNGGa0X8V
+
+##### Bandit Level 16 → Level 17
+To Solve this challange we need to first find ssl server ports which are open to use btw the range 31000 to 32000 so we first use nmap -p 31000 32000 which find the open ports from all 5 open ports the port 31970 didnt return the current password but returned an openssh key for next level to use and the current password we got was kS0Hf0u5HiXFwKMKFqXvPdOTNGGa0X8V
+and after using the ncat --ssl localhost 31790 and submitting the password we got the ssl which ill save as bandit16
+
+##### Bandit Level 17 → Level 18
+To Solve this level first we need to make the bandit16.key and put the ssh key into it and then make it strict using the command chmod 600 bandit16.key so it can only be viewd by the file owner and no one can access it then using the key connect to the server using 
+ssh bandit16.key bandit17@bandit.labs.overthewire.org -p 2220
+and then find the password that is stored in the passwords.new file which has slightly a different line from the file passwords.old to cheak we can use command diff passwords.old passwords.new then the output came as 42c42 which mean that 42 line changed with 42 
+so the password for next level was that changed line in the passwords.new file so password is >> OQxXZjELndr90zuhOTDYBEomI0SZITXI
+
+##### Bandit Level 18 → Level 19
+To Solve this challange we need to use direct cat command in the ssh command it self becuase if u try to connect to the server the connection will be closed and u wont be able to run any command but if u write command in the ssh it self then it will be exicuted as soon as you connect with the server using the previous password 
+so we used ssh bandit16.key bandit18@bandit.labs.overthewire.org -p 2220 cat readme  becuase the password was in readme in home directory so the password is >> KpsOfPkcP7i1FlIExk2QEjyt6dw8dxZI
+
+##### Bandit Level 19 → Level 20
+To Sovle this challange we need to become a admin or tell someone who is already admin to exicute the command like bandit20-do file was the admin so we used ./bandit20-do cat /etc/bandit_pass/bandit20
+so we got the password >>4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA
+
