@@ -192,3 +192,38 @@ so we used ssh bandit16.key bandit18@bandit.labs.overthewire.org -p 2220 cat rea
 To Sovle this challange we need to become a admin or tell someone who is already admin to exicute the command like bandit20-do file was the admin so we used ./bandit20-do cat /etc/bandit_pass/bandit20
 so we got the password >>4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA
 
+##### Bandit Level 20 → Level 21
+To Solve this challange we need to use the programme given in the home directory that talks to the localhost on the port you determine with the current password and use the 
+echo "4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA" | nc -l -p 12345 &
+here we are sending the current password on the port 12345 
+so when we run the programme as ./suconnect 12345 we get he password >> bW9kBv5WC3P4yoDyf12LSdGuNz5ka6hY
+
+##### Bandit Level 21 → Level 22
+To Sovle this challange we need find a script that runs on a specific time which is running on /etc/cron.d/ so after using cd and ls we will get the current file as cronjob_bandit22 after doing cat cronjob_bandit22 we will get a file path after doing the cat we will get another file path /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv so we do cat and get the password >> RYVux2rHEm9tiXHmLFzuR7Vhx6AZQMEz
+
+##### Bandit Level 22 → Level 23
+To Solve this challange we need to find a process running somwhere in /etc/cron.d/ directory so we use cd and ls to get the file direcotry but when cheaked for process we got the code #!/bin/bash
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+So according to this script when we specify the user as $myname and run the script and cheak with /tmp/md5 random character from the user 
+so we used echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+so we got the md5 and after doing the cat /tmp/md5 got from the command we got the password>> gKXDTAXnIz3OBxiPjRZ2uqutUlPZrBsw
+
+##### Bandit Level 23 → Level 24
+To Solve this challange we need to find a programme that runs at a regular interval of time its a time based programme so we find it as earlier and we use that programme to run the command for us so we create a folder mkdir -p /tmp/myall/ and then give acess to that file chmod 777 /tmp/myall/ and then use echo -e '#!/bin/bash\ncat /etc/bandit_pass/bandit24 > /tmp/myall/pass.txt' > /var/spool/bandit24/foo/attack.sh
+as instructed in the file earlier about the bash code and then we use chmod 777 /var/spool/bandit24/foo/attack.sh
+so the programme can exicute our programme and then we wait for time some time to run it as its time based after some time we cheak using cat /tmp/myall/pass.txt
+and we will get the password >> hVQMk3lJNsmQ7VF3ubyrNNBom7BOgVXv
+
+##### Bandit Level 24 → Level 25
+
+
+ 
+
+
+
+
+
+
