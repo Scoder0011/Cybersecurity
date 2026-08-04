@@ -218,6 +218,10 @@ so the programme can exicute our programme and then we wait for time some time t
 and we will get the password >> hVQMk3lJNsmQ7VF3ubyrNNBom7BOgVXv
 
 ##### Bandit Level 24 → Level 25
+To Solve this challange we need to brute force the password using the previous password becuase a dameon is listening at the port 30002 it will give u the password of current level and given the password of previous level with a four digit code it will give the password back but the password isnt guessable so we make a bash script to automate this process to cheak the four digits from 0000 to 10000 so we used for pin in{0000 .. 9999}; do echo"passwordofpreviouslevel $pin"; done | nc localhost 30002 so the password comes as >> SoHfqMOEqIX2IYKVciZxvgpR9a2Djx4P
+
+##### Bandit Level 25 → Level 26
+
 
 
  
