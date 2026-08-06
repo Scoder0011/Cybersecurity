@@ -221,12 +221,54 @@ and we will get the password >> hVQMk3lJNsmQ7VF3ubyrNNBom7BOgVXv
 To Solve this challange we need to brute force the password using the previous password becuase a dameon is listening at the port 30002 it will give u the password of current level and given the password of previous level with a four digit code it will give the password back but the password isnt guessable so we make a bash script to automate this process to cheak the four digits from 0000 to 10000 so we used for pin in{0000 .. 9999}; do echo"passwordofpreviouslevel $pin"; done | nc localhost 30002 so the password comes as >> SoHfqMOEqIX2IYKVciZxvgpR9a2Djx4P
 
 ##### Bandit Level 25 → Level 26
+To Solve this level you need to reduce your terminal till the level till it says either --More-- or till it says --More(Some%)-- then u can do use the terminal using v and inside there you need to type :set =shell/bin/bash and hit enter then again :shell hit enter then you will be in the  bandit26@bandit:~$ just type ls -la then you have to find whats written in the bandit27-do and then run it using another use using the command ./bandit27-do cat /etc/bandit_pass/bandit27
+to get the password for next level >> 
+STJLJBRRphMxKB392CT4iOr5CbzPU9ER
+
+##### Bandit Level 26 → Level 27
+To Solve this level just cat the password folder for the next level as cat /etc/bandit_pass/bandit27 so we get the password >> STJLJBRRphMxKB392CT4iOr5CbzPU9ER
+
+
+##### Bandit Level 27 → Level 28
+To Solve this level you need to clone an git repo which is └─$ git clone ssh://bandit27-git@bandit.labs.overthewire.org:2220/home/bandit27-git/repo
+and then in folders using cd and cat README we will get the password for the next level >> y8Yd2ssKcpHpud7UvOSOxwamRMzIGIeQ
+
+##### Bandit Level 28 → Level 29
+To Solve this level we need again to copy the repo of the git clone ssh://bandit28-git@bandit.labs.overthewire.org:2220/home/bandit28-git/repo repo28 then use ls README.md to find out that password was replaced so we used git log to get all the logs then we used └─$ git show e2e1de5396037bafb23e9bb37c12ebea9b911cfd (specific git commit or can cheak all of it for confirmation as it mentions fix info leak so cheaked this and get the password for next level >> Em7eGtqaMySwNFjCpwzzHhLhospOcdt0
+
+
+##### Bandit Level 29 → Level 30
+To Solve this level we do the same thing clone the repo but we wont find anything in the logs so we cheak branches by git branch -a we will get dev branch then we use git cheakout dev and then we will do cat README.md to get the password >> jq9Dfg2rXsfYsWMgFuKlXhphjdH7USgX
+
+
+##### Bandit Level 30 → Level 31
+Same things as earlier just this time using git tag to get all the tags we get secret then we do git show secret then we get the password >> 82NkymblpGBYmIXG6ZQ8YldBYstHpfUf
+
+
+##### Bandit Level 31 → Level 32
+To Solve this level we need to push a file called key.txt with the content "May I come in?" and then commit it using git commit -m "whatever msg you put " and then use git push origin main to get the password >> pWuj5jBQ6IgV0NXwiH6g1pXRF8S1YvbT
+
+
+##### Bandit Level 32 → Level 33
+To Solve this level you need to enter bandit 32 via ssh and then to get the terminal use the command $0 then just get the password by /etc/bandit_pass/bandit33 and the pass is >> u4P2CyPOwPGLe94RdD9Uo2FxFwvnFswM
 
 
 
- 
+##### Bandit Level 33 → Level 34
+After ssh into last level this is the last prompt they give 
 
+bandit33@bandit:~$ ls
+README.txt
+bandit33@bandit:~$ cat README.txt
+Congratulations on solving the last level of this game!
 
+At this moment, there are no more levels to play in this game. However, we are constantly working
+on new levels and will most likely expand this game with more levels soon.
+Keep an eye out for an announcement on our usual communication channels!
+In the meantime, you could play some of our other wargames.
+
+If you have an idea for an awesome new level, please let us know!
+bandit33@bandit:~$ 
 
 
 
