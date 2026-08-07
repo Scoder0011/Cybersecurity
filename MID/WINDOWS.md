@@ -102,3 +102,11 @@ const arrow = btnInner.createEl('span');
 arrow.className = 'home-btn-arrow';
 arrow.textContent = '→';
 ```
+
+https://academy.hackthebox.com/app/module/49/section/454
+
+####  Introduction to Windows
+
+As most of the corporate and other organizations use windows more often so its imp to understand internal things about windows 
+
+Microsoft is the owner of the windows os they first introduced MS-DOS on 20 nov 1985 first version which included windows file manager print manager porgrams current windows version is window 11 past versions were 2000,xp,vista,95,7,8,,8.1,10. version 10 being one of the longest running and best one so far 
