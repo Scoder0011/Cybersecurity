@@ -103,7 +103,7 @@ arrow.className = 'home-btn-arrow';
 arrow.textContent = '→';
 ```
 
-Games to Access https://overthewire.org/wargames/natas/
+Access to the Game https://overthewire.org/wargames/natas/
 WebSec Learning https://portswigger.net/web-security
 
 
@@ -116,7 +116,7 @@ To solve this level just go to http://natas1.natas.labs.overthewire.org/
 already given and use the username as natas1 and password found in the previous level to get the flag its same in the source code but unlinke last time we got by doing the right click its blocked so we will use f12 to open the source panel or can do ctrl + u to open all the source code and we get the password >> vsDOxoXyq3wckCP1ZmTZ71ngIA606odB
 
 ### Natas Level 1 → Level 2
-To Solve this level same work flow as earlier login as username and password on this level on viewing the source code we see an directory of png linked as <img src=files/pixel.png> after visiting there was nothing but as it was linked with files directory we were able to visit it and find out the flag in users.txt as >> K30JrSRHzjxq3paUQuwozY4MNvmNFyhI
+To Solve this level same work flow as earlier login as username and password on this level on viewing the source code we see an directory of png linked as img src=files/pixel.png after visiting there was nothing but as it was linked with files directory we were able to visit it and find out the flag in users.txt as >> K30JrSRHzjxq3paUQuwozY4MNvmNFyhI
 
 ### Natas Level 2 → Level 3
 To Solve this level we need to go on a directory called /robots.txt which actually helps other bot crawllers tell that what not to scan so they can scan actuall content of the webiste  (in real website) so we get a folder called /secret/ and going there we get the next password >> JDrPnuZAKyl6MkiqQGFIddrqpvgOASth
@@ -136,3 +136,13 @@ The Hint is clearly given in the source code that the password is in the /etc/na
 we can see its rendered as index.php?page=home so we can access other pages or directories by just changing the page=/etc/natas_webpass/natas8 and get the password >> ugXL95KQmUAJJj6bMezOlBNDyI9Imwkc
 
 ### Natas Level 7 → Level 8
+To Solve this level we see in the source code there is an php code that says that the input we will give in the page should be equal to the given code in the source code after processing the processing is that the input first converts bintohex() but its not normal binary to hex but in php its a function so we will use an php converter hextobin() becuase there is one more function that just reverse the converted strings strrev() so instead of doing bintohex in php we will reverse it as hextobin as the given secret is in hex format after conversion we will get base64(== QcCtmMml1ViV3b) we will reverse this base64 into b3ViV1lmMmtCcQ==
+then we will use from base64 converter to text we will get the final input to put in the page oubWYf2kBq (we just reversed the code in the php to get the input secret) after putting this as input we will receave the password for next level >> UdxmI27dTaXmnd1rxKQTfws6jihTdcQ9 
+
+### Natas Level 8 → Level 9
+To Solve this level we will see the source code in the source code we can see that a php code is given as whatever key we will enter it will process as an needle but there is also something called grep -i means whatever we are entering as a key in the input it is going in the server and doing grep -i ; key and returning whatever it found it so we just input ; cat /etc/natas_webpass/natas10 it will go in the server and do grep -i ; cat /etc/natas_webpass/natas10 it so it will not only give all the words but also the password as we used cat to print the password as most of the secret things ppl store for server side is in /etc/ folder so we get the password as >> EgjlkzB6E8LJyf2Obt4q7q4ewt5ZWSNv
+
+### Natas Level 9 → Level 10
+
+
+
