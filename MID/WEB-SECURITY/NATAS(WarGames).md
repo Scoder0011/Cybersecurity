@@ -1,7 +1,7 @@
 ---
 banner: "Assets/Banners/frer.jpeg"
 banner_y: 0.4285
-banner_x: 0.45397
+banner_x: 0.37512
 banner_icon: ☸️
 ---
 
