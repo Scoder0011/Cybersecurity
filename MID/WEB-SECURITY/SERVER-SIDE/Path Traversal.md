@@ -131,3 +131,22 @@ There are 2 ways to protect or we can say we can use both the defense technique
 eg> U have to reach building A u ask someone ask that where is building A and you say go straight take 3 u-turn and then enter the bank so its basicly  `A Building/../../../Bank Vault` . but if u see your home was just A Building so the system cheaks that is the bank vault path comes from A building if its No then server blocks the user and its request. 
 
 
+## Tool and Github for path traversal 
+
+### For Linux 
+1>> [https://github.com/carlospolop/Auto_Wordlists/blob/main/wordlists/file_inclusion_linux.txt](https://github.com/carlospolop/Auto_Wordlists/blob/main/wordlists/file_inclusion_linux.txt)
+
+2>> https://github.com/xmendez/wfuzz/blob/master/wordlist/vulns/dirTraversal-nix.txt
+
+### For Windows
+1>> https://github.com/carlospolop/Auto_Wordlists/blob/main/wordlists/file_inclusion_windows.txt
+
+2>> https://github.com/xmendez/wfuzz/blob/master/wordlist/vulns/dirTraversal-win.txt
+
+
+### Tools 
+1>> ffuf (Fast Fuzzing)
+2>> dotdotpwn
+3>> Nuclei 
+
+
