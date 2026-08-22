@@ -1,6 +1,6 @@
 ---
-banner: "Assets/Banners/Snake.jpeg"
-banner_y: 0.0605
+banner: Assets/Banners/madara.jpg
+banner_y: 0.18193
 banner_x: 0.45397
 banner_icon: 💠
 ---

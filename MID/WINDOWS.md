@@ -1,6 +1,6 @@
 ---
-banner: "Assets/Banners/PixelFish.png"
-banner_y: 0.2085
+banner: "Assets/Banners/akaza.jpg"
+banner_y: 0.14399
 banner_x: 0.45397
 banner_icon: 🍥
 ---

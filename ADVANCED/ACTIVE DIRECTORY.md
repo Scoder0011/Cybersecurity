@@ -1,5 +1,5 @@
 ---
-banner: "Assets/Banners/skull.png"
+banner: Assets/Banners/sukuna.jpg
 banner_y: 0.4725
 banner_x: 0.45397
 banner_icon: ☠️

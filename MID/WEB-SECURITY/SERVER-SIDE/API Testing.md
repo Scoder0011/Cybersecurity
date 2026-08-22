@@ -1,6 +1,6 @@
 ---
-banner: "Assets/Banners/black.jpg"
-banner_y: 0.4505
+banner: "Assets/Banners/makimadevil.jpg"
+banner_y: 0.36807
 banner_x: 0.37512
 banner_icon: 🕰️
 ---

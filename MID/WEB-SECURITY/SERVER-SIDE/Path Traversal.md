@@ -1,6 +1,6 @@
 ---
-banner: "Assets/Banners/flowergirl.png"
-banner_y: 0.5185
+banner: "Assets/Banners/obito.jpg"
+banner_y: 0.4737
 banner_x: 0.37512
 banner_icon: 🌸
 ---

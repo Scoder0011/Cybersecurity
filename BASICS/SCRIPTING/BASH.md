@@ -1,6 +1,6 @@
 ---
-banner: "Assets/Banners/PixelUniv.png"
-banner_y: 0.2545
+banner: Assets/Banners/sololevel.jpg
+banner_y: 0.38308
 banner_x: 0.45397
 banner_icon: 🌠
 ---

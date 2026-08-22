@@ -1,6 +1,6 @@
 ---
-banner: "Assets/Banners/PixelCity.png"
-banner_y: 0.5005
+banner: "Assets/Banners/dragonglow.jpg"
+banner_y: 0.80875
 banner_x: 0.45397
 banner_icon: 💠
 ---

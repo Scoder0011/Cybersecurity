@@ -1,10 +1,9 @@
 ---
-banner: "Assets/Banners/astro.png"
-banner_y: 0.2065
+banner: "Assets/Banners/green.png"
+banner_y: 0.27947
 banner_x: 0.35074
-banner_icon: 🦄
+banner_icon: 🍥
 ---
-
 ```dataviewjs
 const container = dv.container;
 container.style.cssText = `margin: 0 0 24px 0;`;
@@ -102,8 +101,8 @@ const arrow = btnInner.createEl('span');
 arrow.className = 'home-btn-arrow';
 arrow.textContent = '→';
 ```
-
 # Introduction to Information Security
+
 
 ### Module >>> https://academy.hackthebox.com/app/module/293
 

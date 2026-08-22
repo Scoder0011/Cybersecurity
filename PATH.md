@@ -1,8 +1,8 @@
 ---
-banner: "Assets/Banners/mount.jpg"
-banner_y: 0.3465
-banner_x: 0.45397
-banner_icon: ⏱️
+banner: "Assets/Banners/shinobu.jpg"
+banner_y: 0.18141
+banner_x: 0.35074
+banner_icon: 🦄
 ---
 
 ```dataviewjs

@@ -1,6 +1,6 @@
 ---
 banner: "Assets/Banners/dragon.jpg"
-banner_y: 0.2125
+banner_y: 0.31975
 banner_x: 0.45397
 banner_icon: 🐉
 ---

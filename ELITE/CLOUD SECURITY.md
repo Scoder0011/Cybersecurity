@@ -1,6 +1,6 @@
 ---
-banner: "Assets/Banners/alienware.jpg"
-banner_y: 0.6385
+banner: "Assets/Banners/hisoka.jpg"
+banner_y: 0.37686
 banner_x: 0.45397
 banner_icon: 💠
 ---
