@@ -107,24 +107,31 @@ https://academy.hackthebox.com/app/module/34
 
 
 ### Networking Overview
+Network Enables 2 computers to communicate with each other there are various ways to connect like ethernet / fiber / wireless  etc there are protocols like TCP/UDP/IPX that can be used to facilitate the network 
+##### URL >> Uniform Resource Locator
+Url only give the address of the building 
+##### FQDN >> Fully Qualified Domain Name 
+fqdn gives the everything the building address , floor , room no etc .
 
-Network allows two computers to talk to each other . There are many things in networking like
+### Network Types
+Each network is structured differently and can be set up individually. For this reason, so-called `types` and `topologies` have been developed that can be used to categorize these networks.
+##### WAN >> Wide Area Network 
+This is also known as THE INTERNET . Wan Is basicly just a large number of LAN connected together . Corporations also have their own Private WAN
+##### LAN >> Local Area Network 
+LAN or WLAN will typically assign ip add for local use . There is no difference between LAN and WLAN they both are basicly same just one work with wireless and other with Wire .
+##### WLAN >> Wireless Local Area Network
+##### VPN >> Virtual Private Network 
+There are 3 Types of Vpn 
+Vpn is basicly using the internet but from somewhere else
+###### 1. Site to Site VPN
+This is basicly when we connect 2 far seperate companies want to join their network over the internet they use Site to Site Vpn so all the network for both companies feels that they are on same local network . Basicly Secure tunneling but for the whole network 
+###### 2.Remote Access VPN
 
-Topologies(mesh,tree,star)
-Mediums(ethernet,fiber,coax,wireless)
-Protocols(TCP,UDP,IPX)
-
-These Things are used into the Networking or Internet
 
 
-### Basic Information
-![[Pasted image 20260609125545.png]]
 
-THE Internet is distributed into diff Subnetworks like (Home,Collage,Office,etc)
 
-Eg> When we want to access any site of anything we exchange the data of that company's site (address) or 
-URL (Uniform Resoruce Locator) which also known as 
-FDQN (Fully Qualified Domain Name)
 
-The Difference Btw these two are the FDQN only gives the base address (address of the building ).But the URL gives the exact location (which floor which side which office,etc)
+
+
 
